@@ -1,0 +1,125 @@
+\documentclass{article}
+\usepackage{array} %For fixed length table
+\usepackage{multirow} %For combining row col
+\usepackage{amsmath} %For using matrix
+\usepackage[document]{ragged2e} %For alignment
+\title{Sumaia Mam}
+\author{Ahmed Saad}
+\date{October 2022}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents %For content table
+\newpage
+\section{Lab one}
+\subsection{Create Table}
+\textbf{\title{How to create table}}
+%Normal table with border:
+\begin{center}
+\title{Normal Table:} \\
+    \begin{tabular}{| c | c | c | c | c |}
+         \hline
+         Saad & Ahmed & Razia & Sultana \\ [2em]
+         \hline
+         Hello & World & First & Table \\
+         \hline
+    \end{tabular}
+\end{center}
+%Fixed length table:
+\begin{center}
+\title{Fixed length table:} \\
+    \begin{tabular}{| m{5em} | m{1cm} | m{1cm} | m{1cm}|}
+         \hline
+         Saad is my first name & Ahmed & Razia & Sultana \\
+         \hline
+         Hello is basic word & World & First & Table \\
+         \hline
+    \end{tabular}
+\end{center}
+%Combine Column in table:
+\begin{center}
+\title{Combine Column in table:} \\
+    \begin{tabular}{| p{2cm} | p{3cm} | p{1cm} | p{1cm} |}
+    \hline
+    \multicolumn{4}{| c |}{BAUST} \\
+    \hline
+    \multicolumn{2}{| c |}{Personal} &
+    \multicolumn{2}{| c |}{Academic} \\
+    \hline
+    ID & Name & Dept & Batch \\
+    \hline
+    200201008 & Saad Ahmed & CSE & 11th \\
+    \hline
+    200201007 & Razia Sultana & CSE & 11th \\
+    \hline
+    \end{tabular}
+\end{center}
+%Combine Row in table:
+\begin{center}
+\title{Combine Row in table:} \\
+	\begin{tabular}{| c | c | c | c |} 
+	\hline
+	Name & Dept & Batch \\
+	\hline
+	\multirow{3}{4em}{Saad Ahmed Sum} & CSE & 11th \\ 
+	& ME & 11th \\ 
+	& AG & 18th \\ 
+	\hline
+	\end{tabular}
+\end{center}
+
+\section{Lab two}
+\subsection{Different types of matrices}
+\begin{center}
+\title{Plain:}
+$\begin{matrix}
+1 & 2 & 3 & 4 \\
+a & b & c & d
+\end{matrix}$
+\linebreak
+\title{Parenthesis:}
+$\begin{pmatrix}
+1 & 2 & 3 & 4 \\
+a & b & c & d
+\end{pmatrix}$
+\linebreak
+\title{Square:}
+$\begin{bmatrix}
+1 & 2 & 3 & 4 \\
+a & b & c & d
+\end{bmatrix}$
+\linebreak
+\title{Curly:}
+$\begin{Bmatrix}
+1 & 2 & 3 & 4 \\
+a & b & c & d
+\end{Bmatrix}$
+\linebreak
+\title{Vertical:}
+$\begin{vmatrix}
+1 & 2 & 3 & 4 \\
+a & b & c & d
+\end{vmatrix}$
+\linebreak
+\end{center}
+\newpage
+
+\section{Lab three}
+\subsection{Left Alignment}
+\begin{FlushLeft}
+Saad Ahmed
+\end{FlushLeft}
+\subsection{Right Alignment}
+\begin{FlushRight}
+Saad Ahmed
+\end{FlushRight}
+\subsection{Center Alignment}
+\begin{Center}
+Saad Ahmed
+\end{Center}
+\newpage
+
+\section{Lab four}
+\subsection{Reference}
+
+\end{document}

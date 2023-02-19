@@ -1,0 +1,23 @@
+.MODEL SMALL
+.STACK 100H
+.DATA
+.CODE
+MAIN PROC 
+    
+    ;INPUT
+    MOV AH,1
+    INT 21H
+    
+    ;MOVE TO ANOTHER REGISTER 
+    MOV BL,AL
+    
+    ;PRINT
+    MOV AH,2
+    MOV DL,BL
+    INT 21H
+    
+    ;END
+    MOV AH,4CH
+    INT 21H
+    MAIN ENDP
+END MAIN

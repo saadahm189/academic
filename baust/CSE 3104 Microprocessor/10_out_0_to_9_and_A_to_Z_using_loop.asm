@@ -1,0 +1,36 @@
+.MODEL SMALL
+.STACK 100H
+.DATA
+.CODE
+MAIN PROC 
+    ;DIGIT 0 TO 9
+    MOV CX,10
+    MOV BL,'0'
+    
+    PRINTDIGIT:
+    MOV AH,2
+    MOV DL,BL
+    INT 21H
+    
+    INC BL
+    LOOP PRINTDIGIT
+    
+    
+    ;ALPHABET A TO Z
+    MOV CX,26
+    MOV BL,'A'
+    
+    PRINTALPHABET:
+    MOV AH,2
+    MOV DL,BL
+    INT 21H
+    
+    INC BL
+    LOOP PRINTALPHABET
+    
+    ;END
+    END:
+    MOV AH,4CH
+    INT 21H
+    MAIN ENDP
+END MAIN

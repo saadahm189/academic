@@ -1,0 +1,27 @@
+.MODEL SMALL
+.STACK 100H
+.DATA
+MSG DW 'THIS IS SAAD$'
+.CODE
+MAIN PROC
+    MOV AX, @DATA
+    MOV DS,AX
+    
+    MOV SI,0 
+    
+    OUTPUT:
+    CMP SI,12
+    JE END
+    
+    MOV AH,2 
+    MOV DX,MSG[SI]
+    INT 21H
+    
+    INC SI
+    JMP OUTPUT   
+    
+    END:
+    MOV AH,4CH
+    INT 21H
+    MAIN ENDP
+END MAIN

@@ -1,0 +1,34 @@
+.MODEL SMALL 
+.STACK 100H
+.DATA
+M1 DB "Saad Ahmed$" 
+M2 DB "BAUST$"
+.CODE
+MAIN PROC
+    
+    MOV AX, @DATA
+    MOV DS,AX  
+    
+    ;PRINT STRING
+    MOV AH,9
+    LEA DX,M1
+    INT 21H 
+    
+    ;LINE BREAK
+    MOV AH,2
+    MOV DL,0DH ;ENTER
+    INT 21H
+    MOV AH,2
+    MOV DL,0AH ;LINE FIRST
+    INT 21H
+    
+    ;PRINT STRING
+    MOV AH,9
+    LEA DX,M2
+    INT 21H
+    
+    ;END PROGRAM
+    MOV AH, 4CH
+    INT 21H
+    MAIN ENDP
+END MAIN

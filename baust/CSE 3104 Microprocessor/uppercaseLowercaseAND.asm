@@ -1,0 +1,23 @@
+.MODEL MEDIUM
+.STACK 200H
+.DATA
+.CODE
+MAIN PROC
+    MOV AH,1
+    INT 21H 
+    MOV BL,AL
+    
+    ;SUB BL,32 
+    AND BL,0DFH
+    
+    PRINT:
+    MOV AH,2
+    MOV DL,BL
+    INT 21H
+   
+
+    END:
+    MOV AH,4CH
+    INT 21H
+    MAIN ENDP
+END MAIN
