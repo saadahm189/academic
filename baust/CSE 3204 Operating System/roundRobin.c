@@ -19,6 +19,7 @@ int main()
     printf("Enter Quantam:");
     scanf("%d", &Q);
     // Main calculation:
+    i = 0;
     while (RNOP != 0)
     {
         if (tempBT[i] > 0 && tempBT[i] <= Q)
