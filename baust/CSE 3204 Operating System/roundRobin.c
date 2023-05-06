@@ -22,23 +22,23 @@ int main()
     i = 0;
     while (RNOP != 0)
     {
-        if (tempBT[i] > 0 && tempBT[i] <= Q)
+        if (tempBT[i] != 0 && tempBT[i] <= Q)
         {
             sum = sum + tempBT[i];
             tempBT[i] = 0;
             saad = 1;
         }
-        else if (tempBT[i] > 0)
+        else if (tempBT[i] != 0)
         {
-            tempBT[i] = tempBT[i] - Q;
             sum = sum + Q;
+            tempBT[i] = tempBT[i] - Q;
         }
 
         if (tempBT[i] == 0 && saad == 1)
         {
+            printf("%d ", sum - at[i] - bt[i]);
             RNOP--;
             saad = 0;
-            printf("%d ", sum - at[i] - bt[i]);
         }
 
         if (i == NOP - 1)
@@ -54,7 +54,5 @@ int main()
             i = 0;
         }
     }
-    // End of pera:
-
     return 0;
 }
