@@ -6,7 +6,7 @@ def Diagraph(text):
     Diagraph = []
     group = 0
     for i in range(2, len(text), 2):
-        Diagraph.append(text[group:i])
+        Diagraph.append(text[group:i]) #4-6
         group = i
     Diagraph.append(text[group:])
     return Diagraph
@@ -15,8 +15,8 @@ def Diagraph(text):
 # If 2 letters in the same string matches
 def FillerLetter(text):
     k = len(text)
-    if k % 2 == 0:
-        for i in range(0, k, 2):
+    if k % 2 == 0: #2/4/6/8
+        for i in range(0, k, 2): #k-1
             if text[i] == text[i+1]:
                 new_word = text[0:i+1] + str('x') + text[i+1:]
                 new_word = FillerLetter(new_word)
@@ -40,11 +40,11 @@ list1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'k', 'l', 'm',
 # Function to generate the 5x5 key square matrix
 def generateKeyTable(key, list1):
     key_letters = []
-    for i in key:
+    for i in key: #monarchy
         if i not in key_letters:
             key_letters.append(i)
  
-    compElements = []
+    compElements = [] #monarchy+a-z
     for i in key_letters:
         if i not in compElements:
             compElements.append(i)
