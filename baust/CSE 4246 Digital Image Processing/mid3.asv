@@ -59,13 +59,11 @@ for i=0:7
     if len==0
         eqhist=[eqhist 0];
     else
-        sum=0;
-        for j=1:len
-            sum=sum+freq(index(j));
-        end
-        eqhist=[eqhist sum];
+       eqhist=[eqhist 1];
     end
 end
 
 final=[band;eqhist];
 final
+
+

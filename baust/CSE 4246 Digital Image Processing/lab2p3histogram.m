@@ -57,17 +57,16 @@ stem(band,freq);
 eqHgram=[];
 temp=0;
 sum =0;
-for i=1:8
-    temp=i-1;
-    index = find(roundMaxPDF==temp);
+for i=0:7
+    index = find(roundMaxPDF==i);
     index;
     lenIndex = length(index);
     lenIndex;
     if lenIndex == 0
         eqHgram=[eqHgram 0];
     else
-        for i=1:lenIndex
-            sum = sum + freq(index(i));
+        for j=1:lenIndex
+            sum = sum + freq(index(j));
         end
         eqHgram=[eqHgram sum];
         sum = 0;
