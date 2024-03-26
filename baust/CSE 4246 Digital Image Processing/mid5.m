@@ -2,8 +2,8 @@ clear;
 clc;
 close all;
 
-a=imread('img/saad.png');
-b=imread('img/saad.png');
+a=imread('onion.png');
+b=imread('onion.png');
 
 c=a+b;                  % addition
 d=a-b;                  % subtraction

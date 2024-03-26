@@ -54,8 +54,8 @@ temp=0;
 sum=0;
 for i=0:7
     index=find(roundCDF==i);
+    index;
     len=length(index);
-    len
     if len==0
         eqhist=[eqhist 0];
     else
