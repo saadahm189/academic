@@ -32,7 +32,7 @@ PDF=[];
 for i=1:8
    ans=cum(i)/cum(end);
    PDF=[PDF ans];
-   ans=0;
+   ans=0;                                    
 end
 % PDF * Max gray value:
 ans=0;
@@ -72,7 +72,7 @@ for i=1:8
         eqHgram=[eqHgram sum];
         sum = 0;
     end
-end
+end 
 
 figure();
 stem(band,eqHgram);

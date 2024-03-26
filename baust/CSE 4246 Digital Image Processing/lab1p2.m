@@ -12,8 +12,8 @@ disp(d);
 e=a*b;
 disp(e);
 
-%f=a/b;
-%disp(f);
+f=a/2; %whole matrix divide by single number
+disp(f);
 
 x=a./b; %element wise divide
 disp(x);
