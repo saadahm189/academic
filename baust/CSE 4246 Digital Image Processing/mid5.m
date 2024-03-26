@@ -2,8 +2,8 @@ clear;
 clc;
 close all;
 
-a=imread('cameraman.tif');
-b=imread('rice.png');
+a=imread('img/saad.png');
+b=imread('img/saad.png');
 
 c=a+b;                  % addition
 d=a-b;                  % subtraction
