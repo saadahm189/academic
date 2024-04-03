@@ -2,21 +2,23 @@ clear;
 clc;
 close all;
 
-a=imread('onion.png');
-b=imread('onion.png');
+original=imread('img/r.jpg');
+a=imread('img/headr.png');
+b=imread('img/bodyr.png');
 
-c=a+b;                  % addition
-d=a-b;                  % subtraction
-e=a.*b;                 % multiplication
-f=b+50;                % adding a constant
-g=a-100;              % subtracting a constant
-h=255-b;              % negative of a image
+d=a+b;
+e=d-b;
+f=d-a;
 
-subplot(331),imshow(a),title('Image 1')
-subplot(332),imshow(b),title('Image 2')
-subplot(333),imshow(c),title('Addition')
-subplot(334),imshow(d),title('Subtraction')
-subplot(335),imshow(e),title('Multiplication')
-subplot(336),imshow(f),title('Adding a constant(50) to Image 2')
-subplot(337),imshow(g),title('Subtracting a constant(100) from Image 1')
-subplot(338),imshow(h),title('Negative of Image 2')
+subplot(2,2,1);
+imshow(original);
+title("Image 1");
+subplot(2,2,2);
+imshow(e);
+title("Image 2");
+subplot(2,2,3);
+imshow(f);
+title("Image 3");
+subplot(2,2,4);
+imshow(d);
+title("Image 4");
