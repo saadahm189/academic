@@ -1,0 +1,21 @@
+UserID,Gender,Profession,LifeStyle,Age,EstimatedSalary,Purchased
+15624510,Male,Student,Low,19,19000,0
+15810944,Male,,Low,35,20000,0
+15668575,Female,Student,Low,26,43000,0
+15603246,Female,Student,Low,27,57000,0
+15804002,Male,Student,Low,19,76000,0
+15728773,Male,Student,Low,27,58000,0
+15598044,Female,Student,Low,,84000,0
+15694829,Female,Intern,Medium,32,150000,1
+15600575,Male,Student,Low,25,33000,0
+15727311,Female,Student,Low,35,65000,0
+15570769,Female,Intern,Medium,26,80000,1
+15606274,Female,Student,Low,26,52000,0
+15746139,Male,Student,Low,20,86000,0
+15704987,Male,Student,Low,32,18000,0
+15628972,Male,Student,Low,18,82000,0
+15697686,Male,Student,Low,29,80000,0
+15733883,Male,Job Holder,High,,25000,1
+15617482,Male,,High,45,26000,1
+15704583,Male,Job Holder,High,46,28000,1
+15621083,Female,Job Holder,High,48,29000,1
