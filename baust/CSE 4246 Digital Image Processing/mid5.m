@@ -3,22 +3,20 @@ clc;
 close all;
 
 original=imread('img/r.jpg');
-a=imread('img/headr.png');
-b=imread('img/bodyr.png');
+head=imread('img/razia_head.png');
 
-d=a+b;
-e=d-b;
-f=d-a;
+body=original-head;
+full=body+head;
 
 subplot(2,2,1);
 imshow(original);
-title("Image 1");
+title("Original Image");
 subplot(2,2,2);
-imshow(e);
-title("Image 2");
+imshow(head);
+title("Head");
 subplot(2,2,3);
-imshow(f);
-title("Image 3");
+imshow(body);
+title("Body");
 subplot(2,2,4);
-imshow(d);
-title("Image 4");
+imshow(full);
+title("Head with Body");
