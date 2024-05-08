@@ -3,6 +3,7 @@ clear;
 clc;
 % Read image from folder:
 imgRGB=imread('img/saad.png');
+
 % Show image:
 % subplot(3,3,1);
 figure(); 

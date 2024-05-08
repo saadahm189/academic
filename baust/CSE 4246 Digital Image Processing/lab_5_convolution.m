@@ -55,5 +55,5 @@ imshow(uint8(convolved_image_y));
 title('Vertical Edge Detection');
 
 figure;
-imshow(uint8(edge_magnitude));
+%imshow(uint8(edge_magnitude));
 title('Edge Magnitude');
