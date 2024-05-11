@@ -4,14 +4,19 @@ if size(image, 3) == 3
     image = rgb2gray(image);
 end
 
-kernel_x = [1 1 1; 0 0 0; -1 -1 -1];
-kernel_y = [-1 0 1; -1 0 1; -1 0 1];
+kernel_x = [1 1 1; 
+            0 0 0; 
+            -1 -1 -1];
+kernel_y = [-1 0 1; 
+            -1 0 1; 
+            -1 0 1];
 
 [image_height, image_width] = size(image);
 [kernel_height, kernel_width] = size(kernel_x);
 
 pad_height = floor(kernel_height / 2);
 pad_width = floor(kernel_width / 2);
+
 padded_image = padarray(double(image), [pad_height, pad_width], 'replicate', 'both');
 
 correlated_image_x = zeros(image_height, image_width);

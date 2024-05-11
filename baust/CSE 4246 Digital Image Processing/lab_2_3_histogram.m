@@ -50,8 +50,8 @@ for i=1:8
    ans=0;
 end
 
-figure();
-stem(band,freq);
+%figure();
+%stem(band,freq);
 
 % Equilized histogram:
 eqHgram=[];
@@ -73,8 +73,8 @@ for i=0:7
     end
 end 
 
-figure();
-stem(band,eqHgram);
+%figure();
+%stem(band,eqHgram);
 
 result=[band;freq;cum;PDF;maxPDF;roundMaxPDF;eqHgram];
 result

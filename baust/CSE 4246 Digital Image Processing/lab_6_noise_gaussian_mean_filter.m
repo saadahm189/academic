@@ -12,7 +12,7 @@ imshow(originalImage);
 title('Original Image');
 
 % Add Gaussian noise to the image
-noisyImage = imnoise(originalImage, 'gaussian', 0, 0.05); % You can adjust the noise parameters as per your requirement
+noisyImage = imnoise(originalImage, 'gaussian', 0.05); % You can adjust the noise parameters as per your requirement
 
 % Display the noisy image
 subplot(1, 3, 2);
